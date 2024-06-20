@@ -1,0 +1,218 @@
+
+
+.greet h1{
+  text-align:center;
+  font-size: 40px;
+  text-shadow: 3px 3px 5px pink;
+  padding: 20px,30px;
+}
+
+.menu{
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  justify-content: space-between;
+  
+  h2{
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    a{
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+body{
+  background-size: auto;
+  background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/marquee-special-offers-desktop-1920x1344?$pjpeg$&jpegSize=300&wid=1920);
+}
+
+.intro p{
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.box0{
+  width:auto;
+  height: 150px;
+  background: linear-gradient(center, green,blue,pink,aqua);
+  box-shadow: 0px -0px 10px red;
+}
+
+.info{
+  font-size: xx-large;
+  display: flex;
+  gap: 50rem;
+  text-align: center;
+}
+
+.boxses{
+ padding: 0rem 3.1rem;
+}
+
+.box{
+  width: 400px;
+  height: 450px;
+  background: linear-gradient( to bottom right, green,yellow,purple);
+  box-shadow: -10px 10px 30px goldenrod;
+  border-radius: 5%;
+  cursor: pointer;
+  display: inline-block; 
+  margin: 2rem;
+}
+
+.box1{
+  width: 400px;
+  height: 450px;
+  background: linear-gradient(center, green,blue,pink,aqua);
+  box-shadow: -10px 10px 30px goldenrod;
+  border-radius: 5%;
+  display: inline-block;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.box2{
+  width: 400px;
+  height: 450px;
+  background: linear-gradient( to bottom right,green,red,yellow,purple);
+  box-shadow: -10px 10px 30px goldenrod;
+  border-radius: 5%;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2rem;
+  margin-top: 10%; 
+}
+
+.box3{
+  width: 400px;
+  height: 450px;
+  background: linear-gradient( to bottom right,royalblue,red,yellow,brown );
+  box-shadow: -10px 10px 30px goldenrod;
+  border-radius: 5%;
+  display: inline-block;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.box4{
+  width: 400px;
+  height: 450px;
+  background: linear-gradient( to center,green,purple,white,black );
+  box-shadow: -10px 10px 30px goldenrod;
+  border-radius: 5%;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2rem;
+}
+
+.box5{
+  width: 400px;
+  height: 450px;
+  background: linear-gradient( to bottom left,red,yellow,orange );
+  box-shadow: -10px 10px 30px goldenrod;
+  border-radius: 5%;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2rem;
+
+}
+
+
+.boxtext h1,.boxtext1 h1,.boxtext2 h1,.boxtext3 h1,.boxtext4 h1,.boxtext5 h1{
+  text-align: center;
+  font-size: xx-large;
+  padding: 8%;
+  color:black;
+  text-shadow: 0px 0px 10px,pink,;
+} 
+
+.box p,.box1 p,.box2 p,.boxtext3 p,.box4 p,.box5 p{
+  
+  font-size: x-large;
+  font-weight: 700px;
+  line-height: 40px;
+  padding: 10%;
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+.button button, .button1 button,.button2 button,.button3 button,.button4 button,.button5 button{
+  font-size: 20px;
+  border: 1px solid white; 
+  padding: .5rem 1.5rem; 
+  border-radius: 50px; 
+  cursor: pointer ;
+  background: none; 
+  color:blue;
+  margin-left: 63%;
+}
+
+.button button:hover, .button1 button:hover,.button2 button:hover,.button3 button:hover,.button4 button:hover,.button5 button:hover{
+  background-color:rgba(65, 105, 225,0.5);
+}
+
+.box6{
+  width:auto;
+  height: auto;
+  background: linear-gradient(center, green,blue,pink,aqua);
+  box-shadow: 0px -0px 100px red;
+ 
+}
+
+.footer {
+  display:flex;
+  justify-content: space-between;
+  padding: 0% 15%;
+  h4{
+    font-size: 30px;
+    cursor: pointer;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    
+  }
+}
+
+.privacyterms{
+  display:flex;
+  justify-content: space-between;
+  padding: 0% 42%;
+  h6{
+    font-size:15px;
+    cursor: pointer;
+  
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  } 
+}
+/* python course */
+.pythoncourse h3{
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.files{
+  width: auto;
+  height: 400px;
+  background-color: rgb(255, 255, 255,0);
+  box-shadow: 0px 0px 10px;
+  margin-top: 10rem;
+}
+
+.files a{
+  font-size: 40px;
+  margin: 50rem 40rem ;
+  padding: auto 10rem; 
+}
+
+.files img{
+  padding: 0rem 25rem;
+}
