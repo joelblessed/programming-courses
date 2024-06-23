@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+</head>
+<body>
+  
+  <link rel="stylesheet" href="/css/signin.css">
+ 
+ <div class="center">
+  <button  href="#" id="show-login" onclick="openPopup()">log in
+  </button>
+ </div>
+ <div class="popup" id="popup" >
+  <div class="close-btn" onclick="closePopup()" >&times;</div>
+  <div class="form">
+    <h2>log in</h2>
+    <div class="form-element">
+      <label for="e-mail">e-mail</label>
+      <input type="text" id="e-mail" placeholder="example@mail.com">
+    </div>
+    <div class="form-element">
+      <label for="password">password</label>
+      <input type="password" id="password" placeholder="enter a password">
+    </div>
+    <div class="form-element">
+      <input type="checkbox" id="rememberme" >
+      <label for="remember-me">Remember me</label>
+      
+    </div>
+    <div class="form-element">
+      <button>sign in</button>
+    </div>
+    <div class="form-element">
+      <a id="forgotpassword" href="#">forgot password?</a>
+    </div>
+    <div class="form-element">
+     <label id="signuplabel" for="signup">Do not have an account?</label>
+      <a id="signup" href="#">sign up</a>
+    </div>
+  </div>
+ </div>
+ <script>
+let popup = document.getElementById("show-login");
+
+  function openPopup(){
+   popup.classlist.add(".active");
+  }
+ 
+ </script>
+ 
+</body>
+</html>

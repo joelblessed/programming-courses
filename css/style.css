@@ -46,8 +46,18 @@ h2:hover #a4{
   font-size: 40px;
 }
 h2:active #a1{
-  color:grey ;
+  color:greenyellow ;
 }
+h2:active #a2{
+  color:greenyellow ;
+}
+h2:active #a3{
+  color:greenyellow ;
+}
+h2:active #a4{
+  color:greenyellow ;
+}
+
 
 
 body{
@@ -335,3 +345,4 @@ margin: 10px 10px;
   display: block;
   
 }   */
+
