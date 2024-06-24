@@ -43,13 +43,14 @@
   </div>
  </div>
  <script>
-let popup = document.getElementById("show-login");
-
+  let popup = document.getElementById("popup");
   function openPopup(){
-   popup.classlist.add(".active");
+      popup.classList.add("open-popup");
   }
- 
- </script>
+  function closePopup(){
+      popup.classList.remove("open-popup");
+  }
+</script>
  
 </body>
 </html>

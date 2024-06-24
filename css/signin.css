@@ -39,7 +39,7 @@ body{
     border-radius: 10px;
     display: none;
 }
-.popup.active{
+.open-popup{
     display:block;
 }
                
