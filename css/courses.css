@@ -1,7 +1,15 @@
+*{
+  padding: 0%;
+  
+
+  
+  
+}
 
 
 
-.greet h1{
+
+/* .greet h1{
   text-align:center;
   font-size: 40px;
   text-shadow: 3px 3px 5px pink;
@@ -26,7 +34,7 @@
 }
 
 /* menu hovers */
-h2:hover #a1{
+/* h2:hover #a1{
   color: gold;
   font-size: 40px;
   
@@ -62,14 +70,15 @@ h2:active #a4{
 
 body{
   background-size: auto;
-  background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/marquee-special-offers-desktop-1920x1344?$pjpeg$&jpegSize=300&wid=1920);
-}
+  
+}*/
 
 .intro p{
   text-align: center;
   font-size: 25px;
+  color: white;
 
-}
+} 
 
 .box0{
   width:auto;
@@ -83,6 +92,7 @@ body{
   display: flex;
   gap: 50rem;
   text-align: center;
+  color: white;
 }
 
 .boxses{
@@ -95,67 +105,77 @@ body{
   width: 400px;
   height: 450px;
   background: linear-gradient( to bottom right, green,yellow,purple);
-  box-shadow: -10px 10px 30px goldenrod;
+  box-shadow: 0px 0px 50px black;
   border-radius: 5%;
   cursor: pointer;
   display: inline-block; 
   margin: 2rem;
+  background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
 }
 
 .box1{
   width: 400px;
   height: 450px;
   background: linear-gradient(center, green,blue,pink,aqua);
-  box-shadow: -10px 10px 30px goldenrod;
+  box-shadow: 0px 0px 50px black;
   border-radius: 5%;
   display: inline-block;
   cursor: pointer;
   margin: 2rem;
+  
+ 
 }
 
 .box2{
   width: 400px;
   height: 450px;
-  background: linear-gradient( to bottom right,green,red,yellow,purple);
-  box-shadow: -10px 10px 30px goldenrod;
+  background: linear-gradient( );
+  box-shadow: 0px 0px 50px black;
   border-radius: 5%;
   cursor: pointer;
   display: inline-block;
   margin: 2rem;
   margin-top: 10%; 
+ 
+ 
 }
 
 .box3{
   width: 400px;
   height: 450px;
-  background: linear-gradient( to bottom right,royalblue,red,yellow,brown );
-  box-shadow: -10px 10px 30px goldenrod;
+  background: linear-gradient();
+  box-shadow: 0px 0px 50px black;
   border-radius: 5%;
   display: inline-block;
   cursor: pointer;
   margin: 2rem;
+ 
+ 
 }
 
 .box4{
   width: 400px;
   height: 450px;
-  background: linear-gradient( to center,green,purple,white,black );
-  box-shadow: -10px 10px 30px goldenrod;
+  background: linear-gradient(  );
+  box-shadow: 0px 0px 50px black;
   border-radius: 5%;
   cursor: pointer;
   display: inline-block;
   margin: 2rem;
+ 
 }
 
 .box5{
   width: 400px;
   height: 450px;
-  background: linear-gradient( to bottom left,red,yellow,orange );
-  box-shadow: -10px 10px 30px goldenrod;
+  background: linear-gradient();
+  box-shadow: 0px 0px 50px black;
   border-radius: 5%;
   cursor: pointer;
   display: inline-block;
   margin: 2rem;
+
+  
 
 }
 
@@ -164,7 +184,7 @@ body{
   text-align: center;
   font-size: xx-large;
   padding: 8%;
-  color:black;
+  color:white;
   text-shadow: 0px 0px 10px,pink,;
 } 
 
@@ -176,6 +196,7 @@ body{
   padding: 10%;
   text-align: center;
   padding: .5rem 1rem;
+  color:white;
 }
 
 .box1 button,.box2 button,.box3 button,.box4 button,.box5 button{
@@ -185,8 +206,9 @@ body{
   border-radius: 50px; 
   cursor: pointer ;
   background: none; 
-  color:blue;
+  color:purple;
   margin-left: 63%;
+  
 }
 
 .box button{
@@ -196,153 +218,12 @@ body{
   border-radius: 50px; 
   cursor: pointer ;
   background: none; 
-  color:blue;
+  color:purple;
   margin-left:  63%;
   margin-top: 20%;
 }
 
 .button button:hover, .button1 button:hover,.button2 button:hover,.button3 button:hover,.button4 button:hover,.button5 button:hover{
-  background-color:rgba(65, 105, 225,0.5);
+  background-color:r;
 }
-/* footer */
-.box6{
-  width:auto;
-  height: auto;
-  background: linear-gradient(to right, gold,blue,red,aqua) ; 
-  box-shadow: 0px 0px 1px goldenrod;
- 
-}
-
-.footer {
-  display:flex;
-  justify-content: space-between;
-  padding: 0% 15%;
-  h4{
-    font-size: 30px;
-    cursor: pointer;
-    text-shadow:gold;
-    a{
-      text-decoration: none;
-      color: black;
-      
-    }
-    
-  }
-}
-
-.privacyterms{
-  display:flex;
-  justify-content: space-between;
-  padding: 0% 40%;
-  h6{
-    font-size:15px;
-    cursor: pointer;
-    text-shadow:gold;
-  
-    a{
-      text-decoration: none;
-      color: black;
-    }
-  } 
-}
-h4:hover #f1{
- color: red;
- font-size: 40px;
-}
-h4:hover #f2{
-  color: red;
- font-size: 40px;
-}
-
-h4:hover #f3{
-  color: red;
-  font-size: 40px;
-}
-h6:hover #f4{
-  color: green;
-  font-size: 20px;
-}
-h6:hover #f5{
-  color: green;
-  font-size: 20px;
-}
-
-
-h4:active #f1{
-  color: gold;
-}
-h4:active #f2{
-  color: gold;
-}
-h4:active #f3{
-  color: gold;
-}
-h6:active #f4{
-  color: red;
-}
-h6:active #f5{
-  color: red;
-}
-
-/* python course */
-.pythoncourse h3{
-  text-align: center;
-  font-size: 30px;
-
-}
-
-.files{
-  width: auto;
-  height: 400px;
-  background: linear-gradient(center);
-  box-shadow: 0px 0px 10px;
-margin: 10px 10px;
-  
-}
-
-.files a{
-  font-size: 40px;
-  margin: 50rem 40rem ;
-  padding: auto 10rem; 
-}
-
-.files img{
-  padding: 0rem 25rem;
-}
-
-
-/* .box .float p{
-  width: 1000px;
-  height: 600px;
-  background-color: white;
-  box-shadow: -10px 10px 30px goldenrod;
-  border-radius: 5%;
-  cursor: pointer;
-  display: inline-block;
-  margin: -200% 50%;
-  float: left;
-  display: none;
-  
-  
-
-}
-.box .float:hover p{
-  display: block;
-}  */
-/* boxtexto hover */
-/* .boxtext h3 {
-  width: 1000px;
-  height: 500px;
-  background-color:white ;
-  box-shadow: 0px 0px 10px red;
-  margin: -20% 70%;
-  
-  display: none;
-
-
-}
-.boxtext:hover h3{
-  display: block;
-  
-}   */
 

@@ -1,0 +1,97 @@
+
+body{
+    min-height: 100vh;
+    background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/marquee-special-offers-desktop-1920x1344?$pjpeg$&jpegSize=300&wid=1920);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+nav{
+    background-color:rgba(255, 255, 255, 0.588);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    margin-top: 0px;
+    background-size:cover ;
+    background-repeat: round;
+    background-position: center;
+    background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/marquee-special-offers-desktop-1920x1344?$pjpeg$&jpegSize=300&wid=1920);
+}
+nav ul{
+    width:100%;
+    height: 120px;
+    list-style:none;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+nav li{
+    height: 100px;
+    margin-top: 5%;
+    margin-right: 5%;
+   
+}
+ nav a{
+    height: 100%;
+    padding: 0px 20px;
+    margin:  0px 0px ;
+    font-size: 25px;
+    text-decoration: none;
+    align-content: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid;
+    border-radius: 10px;
+    background-repeat:round;
+    
+
+} 
+nav a:hover {
+    background-color:rgba(128, 128, 128, 0.108);
+    font-size: 40PX;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.588);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 1300px){
+    .hideOnMobile{
+        display: none;
+        
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+    

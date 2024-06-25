@@ -7,25 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style.css">
-      <!-- <a href="#moreinfo">evet</a> -->
-      <div class="box0">
-        <div class="greet">
-          <h1>Hello! and wellcome.</h1>
-          <div class="menu">
-          <h2 ><a id="a1"href="/html files/menu/Home.html">Home</a></h2>
-          <h2><a id="a2"href="/html files/menu/courses.html">Courses</a></h2>
-          <h2><a id="a3"href="/html files/menu/Discounts.html">Discounts</a></h2>
-          <h2><a id="a4"href="/html files/menu/signin1.html">Log In</a></h2>
-          </div>
-          
-        </div>
-      </div>
+  <link rel="stylesheet" href="/css/java script.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/navegation bar.css">
+  <!-- <a href="#moreinfo">evet</a> -->
+  <nav>
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="/html files/menu/Home.html">Home</a></li>
+        <li><a href="/html files/menu/courses.html">Courses</a></li>
+        <!-- <li><a href="#">Blog</a></li> -->
+        <li><a href="/html files/menu/forum.html">Forum</a></li>
+        <li><a href="/html files/menu/signin1.html">Log In</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">programming courses</a></li>
+        <li class="hideOnMobile" ><a href="/html files/menu/Home.html">Home</a></li>
+        <li class="hideOnMobile" ><a href="/html files/menu/courses.html">Courses</a></li>
+        <!-- <li class="hideOnMobile" ><a href="#">Blog</a></li> -->
+        <li class="hideOnMobile" ><a href="/html files/menu/forum.html">Forum</a></li>
+        <li class="hideOnMobile" ><a href="/html files/menu/signin1.html">Log In</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+       
+    </ul>
+</nav>
+  <script>
+      function showSidebar(){
+         const sidebar = document.querySelector('.sidebar');
+         sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+         const sidebar = document.querySelector('.sidebar');
+         sidebar.style.display = 'none'
+      }
+  </script>
     <p>uhdafodfnadsfdos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore minus rem, molestias reprehenderit quidem quae exercitationem accusamus, ea sequi perferendis nemo repudiandae voluptatum placeat quia velit architecto fugit a? Tenetur a officiis porro ipsum deserunt nostrum nesciunt itaque aperiam explicabo omnis atque aliquam, minus asperiores mollitia, culpa, id unde non!</p>
 </body>
 <footer>
-  <<div class="box6">
+  <div class="box6">
     <div class="footer">
       <h4><a id="f1" href="/html files/footer/placeholder.html">Place holder</a></h4>
       <h4><a id="f2" href="google.com">Social media</a></h4>

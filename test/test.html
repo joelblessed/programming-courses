@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>nav bar</title>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, deleniti provident! Explicabo cupiditate debitis veritatis rem quod eum vitae quo a rerum nobis iure exercitationem iste totam voluptates laboriosam pariatur possimus suscipit itaque obcaecati, maxime corrupti ut quae nihil! Repellat quia non sit molestiae, culpa qui ratione quod consequatur magnam quos necessitatibus repudiandae cum odit doloribus laudantium dicta? Assumenda placeat aspernatur quasi quis eos veniam unde, odit veritatis corrupti repudiandae esse voluptas fugiat iste, suscipit commodi distinctio obcaecati optio, tempore animi cumque vero. Magni molestiae doloribus alias id, omnis in exercitationem quas laborum recusandae quam laboriosam pariatur quis ex harum sequi. Est velit accusamus, tenetur inventore perspiciatis perferendis rerum officia, cum, enim omnis recusandae voluptates delectus! Eligendi doloribus fuga dicta, optio debitis maiores eum. Quibusdam laudantium minima consequatur blanditiis dolorum, dolore totam maiores libero numquam quo natus optio delectus earum! Rem corrupti laboriosam quis porro adipisci! Similique provident voluptate architecto facere tempore! Unde molestiae beatae nostrum laborum fugit voluptatibus! Sed quo qui consequuntur, voluptatum temporibus praesentium similique alias numquam! Vitae nesciunt assumenda omnis quos, alias libero, nulla provident earum accusamus suscipit ex, optio corrupti tempore. Reprehenderit commodi aperiam architecto porro quisquam placeat, reiciendis nihil harum laudantium inventore ducimus ullam quae! Laudantium deleniti illum facilis unde dolorem ut consequuntur error, voluptatem reiciendis cum impedit, nesciunt ducimus obcaecati laborum porro eveniet, autem velit magni mollitia. Facere nisi delectus laudantium repellat, temporibus accusamus ducimus nemo voluptas quos quo quasi. In distinctio eveniet quam veniam tempore animi dolore, tempora, sunt dignissimos perferendis iure, corporis sed labore voluptatem est quia maxime quae inventore nobis dolor. Ex, perspiciatis. Laborum numquam esse nihil ratione iure molestiae. Qui at officia magni veniam, doloribus mollitia aut sed eveniet sunt voluptates nisi, repudiandae culpa earum saepe voluptatibus consequatur odio hic consectetur! Iusto ducimus quibusdam voluptates excepturi totam. Officia esse voluptate in modi aperiam maiores! Temporibus molestiae, dignissimos provident rerum reiciendis architecto aliquam minus ratione quisquam tempore quasi eum iste ex expedita incidunt eligendi deserunt. Ea autem hic mollitia, possimus aliquam corrupti? Aliquid id, doloribus nemo similique sit vero temporibus ut maiores nam, consectetur, incidunt molestias ipsam tempora accusantium. Necessitatibus dolores animi deleniti enim? Facilis sequi obcaecati a id ipsam molestiae placeat ducimus. Possimus voluptate placeat error nobis blanditiis optio eligendi necessitatibus consequatur! Ratione esse rerum porro, repellat sint, modi unde doloribus in nostrum ullam eveniet tempore doloremque illum commodi. Molestias autem eius, distinctio velit debitis similique! Blanditiis tempora praesentium iure commodi alias modi itaque laborum, odio, accusamus provident dolor nulla magni illo sequi fuga sunt quibusdam iusto voluptatum minus nesciunt. Laborum dolorem possimus debitis sequi iste unde, excepturi quibusdam voluptates numquam repellat? Adipisci quidem nisi rerum accusamus exercitationem quam placeat totam eligendi, omnis laboriosam possimus obcaecati consectetur. Repudiandae natus qui sequi repellendus nisi beatae unde, reiciendis dicta inventore voluptates error obcaecati nemo non, quibusdam dignissimos omnis magni consectetur quod ex debitis delectus nihil quo, dolorem ipsa! Ad voluptatum provident, voluptatibus ex, ea explicabo similique dolore quisquam qui alias laboriosam illum optio quis. Ab impedit unde neque numquam perferendis aut fugiat!</p>
+    <link rel="stylesheet" href="/css/test.css">
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Couses</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">programming courses</a></li>
+            <li class="hideOnMobile" ><a href="#">Home</a></li>
+            <li class="hideOnMobile" ><a href="#">Courses</a></li>
+            <li class="hideOnMobile" ><a href="#">Blog</a></li>
+            <li class="hideOnMobile" ><a href="#">Forum</a></li>
+            <li class="hideOnMobile" ><a href="#">Log In</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+           
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.display = 'none'
+        }
+    </script>
     
-</body>
+    
+</body>    
 </html>

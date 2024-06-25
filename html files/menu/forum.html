@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discounts page</title>
+</head>
+<body>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <a href="#moreinfo">evet</a> -->
+  <nav>
+      <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="/html files/menu/Home.html">Home</a></li>
+          <li><a href="/html files/menu/courses.html">Courses</a></li>
+          <!-- <li><a href="#">Blog</a></li> -->
+          <li><a href="/html files/menu/forum.html">Forum</a></li>
+          <li><a href="/html files/menu/signin1.html">Log In</a></li>
+      </ul>
+      <ul>
+          <li><a href="#">programming courses</a></li>
+          <li class="hideOnMobile" ><a href="/html files/menu/Home.html">Home</a></li>
+          <li class="hideOnMobile" ><a href="/html files/menu/courses.html">Courses</a></li>
+          <!-- <li class="hideOnMobile" ><a href="#">Blog</a></li> -->
+          <li class="hideOnMobile" ><a href="/html files/menu/forum.html">Forum</a></li>
+          <li class="hideOnMobile" ><a href="/html files/menu/signin1.html">Log In</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+         
+      </ul>
+  </nav>
+  <script>
+      function showSidebar(){
+         const sidebar = document.querySelector('.sidebar');
+         sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+         const sidebar = document.querySelector('.sidebar');
+         sidebar.style.display = 'none'
+      }
+  </script>
+    <p>sfsf Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perspiciatis dolorem rerum nostrum perferendis ducimus nesciunt nisi. Temporibus nisi mollitia ullam corrupti quam deleniti officia in dolorum iusto necessitatibus velit, ipsum provident deserunt nostrum inventore impedit cum voluptas dolores obcaecati!</p>
+    
+</body>
+<footer>
+  <div class="box6">
+    <div class="footer">
+      <h4><a id="f1" href="/html files/footer/placeholder.html">Place holder</a></h4>
+      <h4><a id="f2" href="google.com">Social media</a></h4>
+      <h4><a id="f3" href="/html files/footer/about us.html">About us</a></h4>
+      </div>
+      <div class="privacyterms">
+        <h6><a id="f4" href="Privacy policy.html">Privacy policy</a></h6>
+        <h6><a id="f5" href="Terms and conditions.html">Terms and conditions</a></h6>
+      </div>
+  </div>
+ 
+    
+ </footer>   
+</html>
