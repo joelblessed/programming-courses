@@ -18,22 +18,23 @@ body{
     background-position: center;
     background-color:rgba(0, 0, 0, 0);
     height: 150px;
+    
   }
   nav ul{
-    width:100%;
+    width:auto;
     height: 120px;
     list-style:none;
     display:flex;
-    justify-content:flex-start;
+   justify-content: inline-start;
     align-items: center;
+    gap: -0px;
     
   }
   nav li{
-    height: 100px;
-    margin-top: 5%;
-    margin-right: 6%;
-    
-   
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 3%;
+ 
   }
   nav a {
     height: 100%;
@@ -47,8 +48,6 @@ body{
     border: 1px solid blue; 
     border-radius: 10px;
     background-repeat:round;
-  
-    
   
   } 
   #search-icon-navbar{
@@ -70,44 +69,43 @@ body{
     font-size: 1rem;
     
   }
-  select {
-   
-   
-    background-color: #ece5e500;
-    width: 20px;
-    font-size: x-large;
-    height: 30px;
-    border: none;
-    color: black;
-    margin-right: -10px;
+
+  .drop-down-menu, .sidebar .drop-down-menu {
+    margin-top: 10px;
+    display:none;
+    background-color:rgba(255, 255, 255, 0.974);
     border-radius: 15px;
-    outline: none;
-  
-  }
-  
-  
-  nav a:hover {
-    background-color:grey;
-    font-size: 40PX;
-    #courses {
-      height: 42px;
-      margin-bottom: 0px;
-    }
+    text-align: center;
     
   }
+
+  #drop-down-a{
+    border: none;
+    color: black;
+    
+  }
+  #show-drop-down:hover{
+    .drop-down-menu{
+      display: block;
+    }
+  }
+
+  
+
   nav li:first-child{
-    margin-right: auto;
+    margin-right:auto;
+   
   }
   .sidebar{
-    position: fixed;
+    position:absolute;
     top: 0%;
     right: 0%;
-    height: 100vh;
+    height: 50vh;
     width: 200px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.588);
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -144,12 +142,12 @@ body{
     
     #input1{
       height: 40px;
-      background: rgba(224, 32, 32, 0.749);
+      background: rgba(224, 32, 32, 0);
       padding:0px 0px 0px;
       display:flex;
       width: 220px;
       border-radius: 15px;
-      border: none;
+      border: 1px solid;
       outline: none;
     
     } 
@@ -173,7 +171,11 @@ body{
   }
  
 
-
+  @media(max-width: 20000px){
+    .search-bar2{
+      display:none;
+    }
+  }
 
 
   
@@ -187,19 +189,100 @@ body{
   .menu-button{
     display: none;
   }
-  @media(max-width: 1300px){
+  @media(max-width: 1400px){
     .hideOnMobile{
         display: none;
         
     }
-    .menu-button{
-        display: block;
-    }
+    .sidebar{
+      width: 100%;
+      
+  }
+  .menu-button{
+    display: block;
+  }
+  .search-bar2{
+    display:none;
+  }
+  .sidebar{
+    height: 50vh;
+    width: 200px;
+    border: none;
+    gap: 2rem;
+    color: black;
   }
   
-  @media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
-  }
     
+  }
+
+
+
+
+
+
+  
+  @media(max-width: 700px){
+    
+  #hidesearch{
+    position: absolute;
+    top: 70px;
+    margin-left: 50px;
+    border: 2px solid blue;
+  }
+  nav ul{
+   margin-right: 0%;
+   
+  }
+  nav li{
+    margin-right:30px;
+    
+    margin-top: 0px;
+  }
+  .search-bar1{
+    display: none;
+
+  }
+  .search-bar2{
+    display: flex;
+    margin-left: 63px;
+    margin-top: 100px;
+    border: 1px solid grey;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    
+    position: absolute;
+    
+}
+ #input2{
+    height: 20px;
+    background: rgba(227, 113, 113, 0);
+    padding-top: 5px;
+    display: flex;
+    width: 103px;
+    
+    border: none;
+    outline: none;
+
+ } 
+ .button2{
+    height: 30px;
+    margin-left: 57px;
+    padding: 0px 0px 0px;
+    width: 40px;
+    display: flex;
+    margin-left:0px ;
+    width: 40px;
+    color: rgba(127, 255, 212, 0);
+    border: none;
+    outline: none;
+    background-color: rgba(142, 142, 11, 0);
+
+    
+  }
+  .sidebar{
+    height: 45vh;
+    width: 140px;
+    gap: 0.5rem;
+  }
+}   

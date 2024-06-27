@@ -1,4 +1,6 @@
 
+
+
 input, select, textarea{
     color:white;
     font-size: large;
@@ -48,7 +50,7 @@ input, select, textarea{
     height:500px;
     border: 2px solid grey;
     overflow:auto;
-    display: inline-flexbox;
+    display:block;
     
 }
 
@@ -101,7 +103,21 @@ input, select, textarea{
 
 
 .box8{
-    width: 700px;
-    height: 500px;
-    border: 1px solid grey;
+    width:600px;
+    height:500px;
+    border: 2px solid grey;
+    overflow:auto;
+    display:block;
+}
+@media(max-width: 1300px){
+    .title1{
+        width: 300px;
+    }
+    .dirboxes{
+        gap: 0.5rem;
+        margin-left: 0px;
+    }
+    .search-bar1{
+        display: none;
+    }
 }
