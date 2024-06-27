@@ -3,41 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav bar</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/test.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navegation bar.css">
 </head>
 <body>
-    <link rel="stylesheet" href="/css/test.css">
+
     <nav>
         <ul class="sidebar">
             <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Couses</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Log In</a></li>
+            <li><a href="/html files/menu/Home.html">Log in</a></li>
+            <li><a href="/html files/menu/signin1.html">Home</a></li>
+            <!-- <li><a><svg id="search-icon-sidebar" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>  -->
+            <li><a href="/html files/menu/courses.html"><a><label for="courses">Courses</label></a></li>
+               
+            
+            
+            <li><a href="/html files/menu/forum.html">Forum</a></li>
+            <li><a href="/html files/footer/about us.html">About Us</a></li>
+            
         </ul>
         <ul>
             <li><a href="#">programming courses</a></li>
-            <li class="hideOnMobile" ><a href="#">Home</a></li>
-            <li class="hideOnMobile" ><a href="#">Courses</a></li>
-            <li class="hideOnMobile" ><a href="#">Blog</a></li>
-            <li class="hideOnMobile" ><a href="#">Forum</a></li>
-            <li class="hideOnMobile" ><a href="#">Log In</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li class="hideOnMobile" ><a href="/html files/menu/Home.html">Home</a></li>
+            
+            <li class="hideOnMobile" ><a href="/html files/menu/courses.html">Courses 
+                <select name="Courses" id="courses">
+                
+                <option value="python"><a href="/html files/body/python.html">python</a></option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="django">Django</option>
+                <option value="java script">Java Script</option>
+                <option value="react">Reat</option>
+              
+            </select></a></li>
+            <li class="hideOnMobile" ><a href="/html files/menu/forum.html">Forum</a></li>
+            <div class="search-bar1">
+                <div class="inputbox1">
+                    <input id="input1" type="text">
+                </div> 
+                <div class="search-button1">
+                <button class="button1"><svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="px" viewBox="0 -960 960 960" width="60px" fill=""><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+                <link rel="files" href="/data file/">
+            </div>
+            </div>
+            <li class="hideOnMobile" ><a href="/html files/menu/signin1.html">Log In</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
            
         </ul>
     </nav>
-    <script>
-        function showSidebar(){
-           const sidebar = document.querySelector('.sidebar');
-           sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-           const sidebar = document.querySelector('.sidebar');
-           sidebar.style.display = 'none'
-        }
-    </script>
+      <script>
+          function showSidebar(){
+             const sidebar = document.querySelector('.sidebar');
+             sidebar.style.display = 'flex'
+          }
+          function hideSidebar(){
+             const sidebar = document.querySelector('.sidebar');
+             sidebar.style.display = 'none'
+          }
+      </script>
+      <hr id="hr1">
+      <div class="title1">
+        
+    </div>
+      <span class="dirboxes">
+    <div class="box7">
+        <div class="search-bar">
+            <div class="inputbox">
+                <input id="input" type="text">
+            </div> 
+            <div class="search-button">
+            <button class="button"><svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="px" viewBox="0 -960 960 960" width="60px" fill=""><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+            <link rel="files" href="/data file/">
+        </div>
+        </div>
+        <hr id="hr2">
+        <div class="title2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id laborum incidunt non ab atque optio vitae unde aut minima?</p>
+        </div>
+        <a href="/data file/">
+            
+            
+    </div>
+    <div class="box8"></div>
+      </span>
+      
+      <div class="box9"></div>
+      <div class="box10"></div>
     
     
-</body>    
+
+    
+</body>
 </html>

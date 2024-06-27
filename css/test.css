@@ -1,97 +1,107 @@
 
-body{
-    min-height: 100vh;
-    background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/marquee-special-offers-desktop-1920x1344?$pjpeg$&jpegSize=300&wid=1920);
-    background-size:cover ;
-    background-repeat: no-repeat;
-    background-position: center;
-   
+input, select, textarea{
+    color:white;
+    font-size: large;
 }
-nav{
-    background-color:rgba(255, 255, 255, 0.588);
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-    margin-top: 0px;
-    background-size:cover ;
-    background-repeat: round;
-    background-position: center;
-    background: url(https://cc-prod.scene7.com/is/image/CCProdAuthor/marquee-special-offers-desktop-1920x1344?$pjpeg$&jpegSize=300&wid=1920);
+#hr1{
+    margin-top: 50px;
+    
+    height: 1px;
+    background-color:white;
+
 }
-nav ul{
-    width:100%;
-    height: 120px;
-    list-style:none;
+#hr2{
+    
+   width: 270px;
+   margin-top: 10px;
+ 
+  
+    
+}
+.dirboxes{
     display:flex;
-    justify-content:flex-start;
-    align-items: center;
+    gap: 2rem;
+    margin-top: 10px;
+    margin-left: 55px;
+}
+.title1{
+    height: 50px;
+    width:350px ;
+    border: 2px solid grey;
+    display: flex;
+    margin-left: 54px;
+    margin-top: 20px;
+    border-radius: 20px;
+
     
 }
-nav li{
-    height: 100px;
-    margin-top: 5%;
-    margin-right: 5%;
-   
-}
- nav a{
-    height: 100%;
-    padding: 0px 20px;
-    margin:  0px 0px ;
-    font-size: 25px;
-    text-decoration: none;
-    align-content: center;
-    color: black;
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid;
-    border-radius: 10px;
-    background-repeat:round;
+.title1 h2{
+    color: white;
+    justify-content:space-between;
     
-
-} 
-nav a:hover {
-    background-color:rgba(128, 128, 128, 0.108);
-    font-size: 40PX;
-}
-nav li:first-child{
-    margin-right: auto;
-}
-.sidebar{
-    position: fixed;
-    top: 0%;
-    right: 0%;
-    height: 100vh;
-    width: 200px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.588);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  margin: auto;
+    background-color: red;
 }
 
-.sidebar li{
-    width: 100%;
-
-}
-.sidebar a{
-    width: 100%;
-}
-.menu-button{
-    display: none;
-}
-@media(max-width: 1300px){
-    .hideOnMobile{
-        display: none;
-        
-    }
-    .menu-button{
-        display: block;
-    }
-}
-
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
-}
+.box7{
+    width:350px;
+    height:500px;
+    border: 2px solid grey;
+    overflow:auto;
+    display: inline-flexbox;
     
+}
+
+
+.search-bar{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 20px;
+    border: 4px solid grey;
+    height: 40px;
+    width: 270px;
+    border-radius: 15px;
+    
+}
+ #input{
+    height: 40px;
+    background: rgba(227, 113, 113, 0);
+    padding:0px 0px 0px;
+    display: flex;
+    width: 220px;
+    
+    border: none;
+    outline: none;
+
+ } 
+ .button{
+    height: 40px;
+    margin-left: 49px;
+    padding: 0px 0px 0px;
+    width: 40px;
+    display: flex;
+    margin-left:0px ;
+    width: 50px;
+    color: rgba(127, 255, 212, 0);
+    border: none;
+    outline: none;
+    background-color: rgba(251, 251, 233, 0.196);
+
+    
+ }
+ a{
+    color: red;
+ }
+
+.title2{
+    margin-top: 20px;
+    background-color: red;
+}
+
+
+
+.box8{
+    width: 700px;
+    height: 500px;
+    border: 1px solid grey;
+}
