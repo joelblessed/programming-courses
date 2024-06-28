@@ -6,8 +6,8 @@ input, select, textarea{
     font-size: large;
 }
 #hr1{
-    margin-top: 50px;
-    
+    margin-top: 20px;
+    width: auto;
     height: 1px;
     background-color:white;
 
@@ -121,3 +121,43 @@ input, select, textarea{
         display: none;
     }
 }
+
+
+
+@media(max-width: 500px){
+    .box7{
+        display: none;
+      }
+      .dirboxes{
+        justify-content: center;
+      }
+      .box8{
+        width:409px;
+        margin: auto;
+        
+      }
+      .title1{
+        margin: auto;
+      }
+}
+
+
+@media(max-width: 400px){
+    .box7{
+        display: none;
+      }
+      .dirboxes{
+        justify-content: center;
+      }
+      .box8{
+        width:360px;
+        margin: auto;
+        
+        
+      }
+      .title1{
+        margin: auto;
+        
+      }
+}
+    

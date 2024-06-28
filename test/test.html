@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/css/test.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/navegation bar.css">
-</head>
-<body>
+
 
     <nav>
         <ul class="sidebar">
@@ -61,25 +60,29 @@
             </div>
             <li class="hideOnMobile" ><a href="/html files/menu/signin1.html">Log In</a></li>
             <li class="menu-button" onclick=showSidebar()><a  href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-           
+            <script>
+                function showSidebar(){
+                   const sidebar = document.querySelector('.sidebar');
+                   sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                   const sidebar = document.querySelector('.sidebar');
+                   sidebar.style.display = 'none'
+                }
+            </script>
         </ul>
     </nav>
-      <script>
-          function showSidebar(){
-             const sidebar = document.querySelector('.sidebar');
-             sidebar.style.display = 'flex'
-          }
-          function hideSidebar(){
-             const sidebar = document.querySelector('.sidebar');
-             sidebar.style.display = 'none'
-          }
-      </script>
+</head>
+<body>
+
+   
+      
       <hr id="hr1">
       <div class="title1">
         
     </div>
-      <div class="dirboxes">
-    <span class="box7">
+      <span class="dirboxes">
+    <div class="box7">
         <div class="search-bar">
             <div class="inputbox">
                 <input id="input" type="text">
@@ -96,13 +99,13 @@
         <a href="/data file/">
             
             
-        </span>
-    <span class="box8"></span>
-</div>
+        </div>
+    <div class="box8"></div>
+    </span>
+
+
+
       
-      <div class="box9"></div>
-      <div class="box10"></div>
-    
     
 
     
