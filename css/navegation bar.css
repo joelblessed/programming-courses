@@ -31,7 +31,7 @@ body{
     height: 120px;
     list-style:none;
     display:flex;
-   justify-content: inline-start;
+   justify-content: inline-end;
     align-items: center;
     gap: -0px;
     
@@ -48,7 +48,7 @@ body{
     margin:  0px 0px ;
     font-size: 25px;
     text-decoration: none;
-    align-content: center;
+    /* align-content: center; */
     color:white;
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid blue; 
@@ -96,11 +96,25 @@ body{
       display: block;
     }
   }
+  .menu-button{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid blue;
+    border-radius: 15px;
+    #hamburger-menu{
+     padding-top: 8px;
+    }
+    
+
+  }
 
   
 
-  nav li:first-child{
-    margin-right:auto;
+   nav li:first-child{ 
+   margin-right: auto;
    
   }
   .sidebar{
@@ -120,6 +134,13 @@ body{
     background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
     
     
+  }
+
+  .logo{
+    height: 100px;
+    width: 150px;
+    margin-top: -20px;
+   
   }
  
   input, select, textarea{
@@ -201,6 +222,11 @@ body{
   .menu-button{
     display: none;
   }
+
+
+
+
+
   @media(max-width: 1300px){
     .hideOnMobile{
         display: none;
@@ -209,6 +235,7 @@ body{
     
   .menu-button{
     display: block;
+    
   }
   .search-bar2{
     display:none;
@@ -220,7 +247,12 @@ body{
     gap: 2rem;
     color: black;
   }
-  
+  .search-bar2{
+    margin-top: -50px;
+    margin-right: 40px;
+    
+    
+   }
     
   }
 
@@ -293,22 +325,53 @@ body{
     width: 140px;
     gap: 0.5rem;
   }
+  .logo{
+    margin-left: -40px;
+    height: 80px;
+    margin-top: -40px;
+    width: 100px;
+    
+   }
+  
+  .menu-button{
+   margin-top: -50px;
+  }
+  nav{
+    height: 90px;
+    margin: 0px;
+
+   }
+   .search-bar2{
+    margin-top: -50px;
+    margin-right: 40px;
+    
+    
+   }
+  
  
 }   
 
 
+
+
 @media  (max-width: 400px){
    nav{
-    height: 100px;
+    height: 90px;
     margin: 0px;
 
    }
+   
+   /* .menu-button{ 
+    margin-left:;
+    
+   }*/
    nav li{
     
     margin-bottom:63px;
    }
    .search-bar2{
-    margin-top: 30px;
+    margin-top: -50px;
+    margin-right: 40px;
     
     
    }
@@ -316,7 +379,20 @@ body{
     height: auto;
     width: auto;
     
+   }
+   nav a{
+    background-color: red;
+    justify-content: space-evenly;
+   }
+   .logo{
+    margin-left: -40px;
+    height: 80px;
+    margin-top: -10px;
+    width: 100px;
     
+   }
+   .menu-button{
+    margin-top: -50px;
    }
    
    
