@@ -5,76 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/oracle.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navegation bar.css">
+    <!-- <a href="#moreinfo">evet</a> -->
+    <nav>
+      <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="/html files/menu/signin1.html">Log in</a></li>
+          <li><a href="/html files/menu/Home.html">Home</a></li>
+          <!-- <li><a><svg id="search-icon-sidebar" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>  -->
+          <li><a href="/html files/menu/courses.html">Courses</a></li>
+          <li><a href="/html files/menu/forum.html">Forum</a></li>
+          <li><a href="/html files/footer/about us.html">About Us</a></li>
+          
+      </ul>
+      <ul id="nav-ul">
+         <li><img class="logo" src="/images/1705826273539.jpeg" alt="logo"></li> 
+          <li class="hideOnMobile" ><a href="/html files/menu/Home.html">Home</a></li>
+          <li id="show-drop-down" class="hideOnMobile" ><a href="/html files/menu/courses.html">Courses</a>
+              <div class="drop-down-menu">
+                 
+              <a id="drop-down-a" href="/html files/body/python.html">Python</a>
+              <hr id="hr3">
+              <a id="drop-down-a" href="/html files/body/Django.html">Django</a>
+              <hr id="hr4">
+              <a id="drop-down-a" href="/html files/body/oracle.html">Oracle</a>
+              <hr id="hr5">
+              <a id="drop-down-a" href="/html files/body/java script.html">Java Script</a>
+              <hr id="hr6">
+              <a id="drop-down-a" href="/html files/body/React.html">React</a>
+              
+                  </div>
+        </li>
+          <li class="hideOnMobile" ><a href="/html files/menu/forum.html">Forum</a></li>
+          <div id="hidesearch" class="search-bar1">
+              <div class="inputbox1">
+                  <input id="input1" type="text">
+              </div> 
+              <div class="search-button1">
+              <button class="button1"><svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="px" viewBox="0 -960 960 960" width="60px" fill=""><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+              <link rel="files" href="/data file/">
+          </div>
+          </div>
+
+          <div class="search-bar2">
+              <div class="inputbox2">
+                  <input id="input2" type="text">
+              </div> 
+              <div class="search-button2">
+              <button class="button2"><svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="40px" fill=""><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+              <link rel="files" href="/data file/">
+          </div>
+          </div>
+          <li class="hideOnMobile" ><a href="/html files/menu/signin1.html">Log In</a></li>
+          <div class="menu-button" onclick=showSidebar()> <svg  id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+          <script>
+              function showSidebar(){
+                 const sidebar = document.querySelector('.sidebar');
+                 sidebar.style.display = 'flex'
+              }
+              function hideSidebar(){
+                 const sidebar = document.querySelector('.sidebar');
+                 sidebar.style.display = 'none'
+              }
+          </script>
+      </ul>
+  </nav>
 </head>
 <body>
-  <link rel="stylesheet" href="/css/oracle.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="/css/navegation bar.css">
-  <!-- <a href="#moreinfo">evet</a> -->
-  <nav>
-    <ul class="sidebar">
-        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li><a href="/html files/menu/signin1.html">Log in</a></li>
-        <li><a href="/html files/menu/Home.html">Home</a></li>
-        <!-- <li><a><svg id="search-icon-sidebar" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>  -->
-        <li><a href="/html files/menu/courses.html">Courses</a></li>
-        <li><a href="/html files/menu/forum.html">Forum</a></li>
-        <li><a href="/html files/footer/about us.html">About Us</a></li>
-        
-    </ul>
-    <ul id="nav-ul">
-        <li><a href="#">Logo</a></li>
-        <li class="hideOnMobile" ><a href="/html files/menu/Home.html">Home</a></li>
-        <li id="show-drop-down" class="hideOnMobile" ><a href="/html files/menu/courses.html">Courses</a>
-            <div class="drop-down-menu">
-               
-            <a id="drop-down-a" href="/html files/body/python.html">Python</a>
-            <hr id="hr3">
-            <a id="drop-down-a" href="/html files/body/Django.html">Django</a>
-            <hr id="hr4">
-            <a id="drop-down-a" href="/html files/body/oracle.html">Oracle</a>
-            <hr id="hr5">
-            <a id="drop-down-a" href="/html files/body/java script.html">Java Script</a>
-            <hr id="hr6">
-            <a id="drop-down-a" href="/html files/body/React.html">React</a>
-            
-                </div>
-      </li>
-        <li class="hideOnMobile" ><a href="/html files/menu/forum.html">Forum</a></li>
-        <div id="hidesearch" class="search-bar1">
-            <div class="inputbox1">
-                <input id="input1" type="text">
-            </div> 
-            <div class="search-button1">
-            <button class="button1"><svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="px" viewBox="0 -960 960 960" width="60px" fill=""><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
-            <link rel="files" href="/data file/">
-        </div>
-        </div>
 
-        <div class="search-bar2">
-            <div class="inputbox2">
-                <input id="input2" type="text">
-            </div> 
-            <div class="search-button2">
-            <button class="button2"><svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="40px" fill=""><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
-            <link rel="files" href="/data file/">
-        </div>
-        </div>
-        <li class="hideOnMobile" ><a href="/html files/menu/signin1.html">Log In</a></li>
-        <li class="menu-button" onclick=showSidebar()><a  href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-       
-    </ul>
-</nav>
-  <script>
-      function showSidebar(){
-         const sidebar = document.querySelector('.sidebar');
-         sidebar.style.display = 'flex'
-      }
-      function hideSidebar(){
-         const sidebar = document.querySelector('.sidebar');
-         sidebar.style.display = 'none'
-      }
-  </script>
+  
+
     <p>hahufads Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit repellendus perspiciatis qui, dolore aut dicta, mollitia nulla temporibus odit ab facilis ipsum rerum optio architecto. Laudantium, provident? Tempora, iste. Inventore similique quasi saepe qui nulla corporis sit ut accusamus, nostrum perferendis ipsa! Id quo minima distinctio tenetur veritatis veniam, reiciendis est corporis quos blanditiis autem totam eos quae expedita aspernatur?</p>
 </body>
 <footer>

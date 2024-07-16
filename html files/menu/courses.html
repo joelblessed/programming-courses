@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
-    </head>
-    <body>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>
+
       <link rel="stylesheet" href="/css/courses.css">
       <link rel="stylesheet" href="/css/footer.css">
       <link rel="stylesheet" href="/css/navegation bar.css">
@@ -20,7 +22,7 @@
             
         </ul>
         <ul id="nav-ul">
-            <li><a href="#">Logo</a></li>
+           <li><img class="logo" src="/images/1705826273539.jpeg" alt="logo"></li> 
             <li class="hideOnMobile" ><a href="/html files/menu/Home.html">Home</a></li>
             <li id="show-drop-down" class="hideOnMobile" ><a href="/html files/menu/courses.html">Courses</a>
                 <div class="drop-down-menu">
@@ -58,21 +60,24 @@
             </div>
             </div>
             <li class="hideOnMobile" ><a href="/html files/menu/signin1.html">Log In</a></li>
-            <li class="menu-button" onclick=showSidebar()><a  href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-           
+            <div class="menu-button" onclick=showSidebar()> <svg  id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+            <script>
+                function showSidebar(){
+                   const sidebar = document.querySelector('.sidebar');
+                   sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                   const sidebar = document.querySelector('.sidebar');
+                   sidebar.style.display = 'none'
+                }
+            </script>
         </ul>
     </nav>
-      <script>
-          function showSidebar(){
-             const sidebar = document.querySelector('.sidebar');
-             sidebar.style.display = 'flex'
-          }
-          function hideSidebar(){
-             const sidebar = document.querySelector('.sidebar');
-             sidebar.style.display = 'none'
-          }
-      </script>
-
+        
+    </head>
+    <body>
+    
+     
       
       <div class="intro">
         <p>This is a place where you can learn a variety of things.</p>
@@ -81,6 +86,7 @@
       <div class="info">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit ad veritatis iste dolores laboriosam reprehenderit repellendus? Veritatis, omnis magni!</p>
       </div>
+
         <div class="boxses">
             
           <span id="box" class="box">

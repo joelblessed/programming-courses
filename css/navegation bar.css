@@ -21,7 +21,7 @@ body{
     background-repeat: round;
     background-position: center;
     
-    height: 150px;
+    height: 130px;
     position:sticky;
     top: 0px;
     float: none;
@@ -381,7 +381,7 @@ body{
     
    }
    nav a{
-    background-color: red;
+  
     justify-content: space-evenly;
    }
    .logo{
