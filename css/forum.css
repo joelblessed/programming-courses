@@ -1,0 +1,42 @@
+*{
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0%;
+   
+
+    background-color:white;
+    
+}
+.hr1{
+ margin:25px;
+ background:linear-gradient(to left,rgba(255, 255, 255, 0),black,black,black, rgba(255, 255, 255, 0.095));
+ border-color: rgba(0, 0, 0, 0.045);
+ height: 1px;
+ 
+ 
+
+}
+.hr2{
+    width: 1px;
+    height: 700px;
+    background:black;
+    margin-left: 400px;
+    margin-top: -26px;
+
+    
+}
+.boxes{
+    justify-content: center;
+    display:block;
+   
+   
+    
+
+}
+.box1{
+    position: sticky;
+top: 20px;
+}
